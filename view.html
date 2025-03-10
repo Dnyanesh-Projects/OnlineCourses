@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course View</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="nav-link">Home</a>
+        </div>
+        <div class="navbar-left">
+            <a href="about.html" class="nav-link">About</a>
+        </div>
+        <div class="navbar-left dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Courses</a> <!-- Dropdown toggle -->
+            <div class="dropdown-menu">
+                <a href="javafullstact.html" class="dropdown-item">Java Full Stack</a>
+                <a href="pythonfullstack.html" class="dropdown-item">Python Full Stack</a>
+                <a href="front-end-course.html" class="dropdown-item">Front-End Course</a>
+            </div>
+        </div>
+        <div class="navbar-left">
+            <a href="course-details.html" class="nav-link"> Batches </a>
+            <!-- <a href="#contact" class="nav-link">Contact</a> -->
+          </div>
+          <div class="navbar-left">
+            <a href="Start.html" class="nav-link"> Free Courses </a>
+            <!-- <a href="#contact" class="nav-link">Contact</a> -->
+          </div>
+        <div class="navbar-center">
+            <input type="text" class="form-control" placeholder="Search...">
+        </div>
+        <div class="navbar-right">
+            <a href="course-details.html" class="nav-link"></i> Back </a>
+        </div>
+        <div class="navbar-right">
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+    <div class="container">
+        <div class="left-section">
+            <h1 id="course-title">Java Full Stack</h1>
+            <p><strong>Instructor:</strong> Dnyanesh Awaghad</p>
+            <h2>Batches</h2>
+            <ul id="batch-list">
+                <li>
+                    <strong>Batch A:</strong> 10:00 AM - 12:00 PM (Fee: ₹5000)
+                    <a
+                        href="form.html?course=Java%20Full%20Stack&batch=Batch%20A&time=10:00%20AM%20-%2012:00%20PM">Select</a>
+                </li>
+                <li>
+                    <strong>Batch B:</strong> 2:00 PM - 4:00 PM (Fee: ₹4500)
+                    <a
+                        href="form.html?course=Java%20Full%20Stack&batch=Batch%20B&time=2:00%20PM%20-%204:00%20PM">Select</a>
+                </li>
+                <li>
+                    <strong>Batch C:</strong> 6:00 PM - 8:00 PM (Fee: ₹4800)
+                    <a
+                        href="form.html?course=Java%20Full%20Stack&batch=Batch%20C&time=6:00%20PM%20-%208:00%20PM">Select</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <h2>Demo Videos</h2>
+            <video controls width="100%">
+                <source src="videos/java-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls width="100%" style="margin-top: 20px;">
+                <source src="videos/advanced-java.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2025 Dnyanesh. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                |
+                <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

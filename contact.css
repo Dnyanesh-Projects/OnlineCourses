@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h2.contact {
+    text-align: center;
+    margin: 20px 0;
+    color: #007bff;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+}
+
+.navbar .navbar-left,
+.navbar .navbar-right,
+.navbar .navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffdd57;
+}
+
+.navbar .dropdown-menu {
+    position: absolute;
+    background-color: #007bff;
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.navbar .dropdown-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #0056b3;
+}
+
+.navbar input.form-control {
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-container,
+.address-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.form-container form input,
+.form-container form select,
+.form-container form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-container form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container form button:hover {
+    background-color: #0056b3;
+}
+
+.address-info h3 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.address-info a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.address-info a:hover {
+    color: #00376b;
+}
+
+.address-info i {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* Footer Styling */
+.Footer {
+    background-color: #343a40;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Footer p {
+    margin: 0;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container,
+    .address-info {
+        width: 100%;
+        padding: 10px;
+    }
+}

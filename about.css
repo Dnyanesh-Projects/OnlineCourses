@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1, h3, h4 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+.navbar .dropdown-menu {
+    background-color: #007bff;
+    border: none;
+}
+
+.navbar .dropdown-item {
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Search Bar */
+.navbar input.form-control {
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+/* Header Section */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header p {
+    color: #f8f9fa;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 3rem 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.about-section p.lead {
+    font-size: 1.25rem;
+    color: #444;
+}
+
+/* Address Info */
+.address-info {
+    margin-top: 1rem;
+}
+
+.address-info h3 {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.address-info a {
+    text-decoration: none;
+    color: #0056b3;
+    transition: color 0.3s ease-in-out;
+}
+
+.address-info a:hover {
+    color: #00376b;
+}
+
+.address-info i {
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #343a40;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.footer p {
+    margin: 0;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar input.form-control {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-section p.lead {
+        font-size: 1.1rem;
+    }
+}

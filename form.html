@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="nav-link">Home</a>
+      </div>
+      <div class="navbar-left">
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+      <div class="navbar-left dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Courses</a>
+        <!-- Dropdown toggle -->
+        <div class="dropdown-menu">
+          <a href="javafullstact.html" class="dropdown-item">Java Full Stack</a>
+          <a href="pythonfullstack.html" class="dropdown-item"
+            >Python Full Stack</a
+          >
+          <a href="front-end-course.html" class="dropdown-item"
+            >Front-End Course</a
+          >
+        </div>
+        </div>
+           <div class="navbar-left">
+          <a href="course-details.html" class="nav-link"> Batches </a>
+          <!-- <a href="#contact" class="nav-link">Contact</a> -->
+        </div>
+      </div>
+      <div class="navbar-left">
+        <a href="Start.html" class="nav-link"> Free Courses </a>
+        <!-- <a href="#contact" class="nav-link">Contact</a> -->
+      </div>
+      <div class="navbar-center">
+        <input type="text" class="form-control" placeholder="Search..." />
+      </div>
+      <div class="navbar-right">
+        <a href="view.html" class="nav-link"> Back</a>
+      </div>
+      <div class="navbar-right">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+    <!-- nav bar end -->
+    <div class="container">
+      <h1>Course Enrollment</h1>
+      <form action="#">
+        <label for="name">Your Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="course">Course Name:</label>
+        <input type="text" id="course" name="course" readonly />
+
+        <label for="batch">Batch:</label>
+        <select id="batch" name="batch" required>
+          <option value="Batch A">Batch A</option>
+          <option value="Batch B">Batch B</option>
+          <option value="Batch C">Batch C</option>
+        </select>
+
+        <label for="batch-time">Batch Time:</label>
+        <input type="text" id="batch-time" name="batch-time" readonly />
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="" disabled selected>Select Payment Method</option>
+          <option value="credit_card">Credit Card</option>
+          <option value="debit_card">Debit Card</option>
+          <option value="net_banking">Net Banking</option>
+          <option value="upi">UPI</option>
+        </select>
+
+        <button type="submit">Enroll Now</button>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2025 Dnyanesh. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a> |
+          <a href="terms-of-service.html" class="footer-link"
+            >Terms of Service</a
+          >
+          |
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-right">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Function to get query parameters from the URL
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Set the course, batch, and batch time based on the URL query parameters
+      window.onload = function () {
+        const courseName = getQueryParam("course");
+        const batchName = getQueryParam("batch");
+        const batchTime = getQueryParam("time");
+
+        // Set values in the form fields
+        document.getElementById("course").value = courseName;
+        document.getElementById("batch").value = batchName;
+        document.getElementById("batch-time").value = batchTime;
+      };
+    </script>
+  </body>
+</html>
